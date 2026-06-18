@@ -2,203 +2,53 @@
 <html lang="hu">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ORFK RP - Szabadszállás Készenléti Rendőrség</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f7fa;
-      color: #1b1b1b;
-    }
-
-    /* HEADER */
-    .header {
-      background: #0b2d4d;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .header h1 {
-      margin: 0;
-      font-size: 22px;
-      letter-spacing: 1px;
-    }
-
-    .header p {
-      margin: 5px 0 0;
-      font-size: 13px;
-      opacity: 0.8;
-    }
-
-    /* NAV */
-    .nav {
-      background: #093052;
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      padding: 12px;
-      flex-wrap: wrap;
-    }
-
-    .nav a {
-      color: white;
-      text-decoration: none;
-      font-size: 13px;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-
-    .nav a:hover {
-      color: #90caf9;
-    }
-
-    /* HERO */
-    .hero {
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-      url('https://images.unsplash.com/photo-1587293852726-70cdb56c2866') center/cover;
-      height: 320px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-align: center;
-    }
-
-    .hero h2 {
-      font-size: 30px;
-      margin: 0;
-    }
-
-    .hero p {
-      font-size: 14px;
-      opacity: 0.9;
-    }
-
-    /* CONTAINER */
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      padding: 18px;
-      border-left: 4px solid #0b2d4d;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-
-    .card h3 {
-      margin-top: 0;
-      font-size: 16px;
-    }
-
-    /* BUTTON */
-    .btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 14px;
-      background: #0b2d4d;
-      color: white;
-      text-decoration: none;
-      font-size: 13px;
-      border-radius: 3px;
-    }
-
-    .btn:hover {
-      background: #134a7a;
-    }
-
-    /* FOOTER */
-    .footer {
-      background: #0b2d4d;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 30px;
-      font-size: 12px;
-    }
-  </style>
+  <title>ORFK RP - Szabadszállás</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="header">
+<header>
   <h1>ORFK - SZABADSZÁLLÁS KÉSZENLÉTI RENDŐRSÉG RP</h1>
   <p>Hivatalos Tájékoztató Portál</p>
-</div>
+</header>
 
-<div class="nav">
-  <a href="#about">Bemutatás</a>
-  <a href="#rules">Szabályzat</a>
-  <a href="#join">Jelentkezés</a>
-  <a href="#contact">Elérhetőség</a>
-</div>
+<nav>
+  <a href="index.html">Főoldal</a>
+  <a href="news.html">Közlemények</a>
+  <a href="about.html">Szervezet</a>
+  <a href="rules.html">Szabályzat</a>
+  <a href="join.html">Csatlakozás</a>
+  <a href="contact.html">Kapcsolat</a>
+</nav>
 
 <div class="hero">
   <div>
-    <h2>Hivatás. Fegyelem. Biztonság.</h2>
-    <p>Bács-Kiskun Vármegyei Készenléti Rendőrség RP</p>
+    <h2>Hivatalos rendvédelmi Roleplay központ</h2>
+    <p>Fegyelem • Rend • Strukturált működés</p>
   </div>
 </div>
 
 <div class="container">
 
-  <div class="grid">
+  <div class="card">
+    <span class="news-tag">KÖZLEMÉNY</span>
+    <h3>Új jelentkezési rendszer indult</h3>
+    <p>
+      A Szabadszállás KR RP új whitelist rendszert vezetett be.
+    </p>
+  </div>
 
-    <div class="card" id="about">
-      <h3>🏛️ Szervezet</h3>
-      <p>
-        A Szabadszállás Készenléti Rendőrség RP egy strukturált,
-        realisztikus rendvédelmi szerepjáték közösség,
-        amely a fegyelmet és a professzionális működést helyezi előtérbe.
-      </p>
-    </div>
-
-    <div class="card" id="rules">
-      <h3>📜 Szabályzat</h3>
-      <p>
-        • RDM / VDM tiltott<br>
-        • Metagaming tiltott<br>
-        • FearRP kötelező<br>
-        • Staff utasítás kötelező<br>
-        • Tisztelet minden játékos felé
-      </p>
-    </div>
-
-    <div class="card" id="join">
-      <h3>📥 Csatlakozás</h3>
-      <p>Jelentkezés a hivatalos Discord szerveren.</p>
-
-      <a class="btn" href="https://discord.com/channels/1512474765120634950/1517227227350171688" target="_blank">
-        Discord megnyitása
-      </a>
-    </div>
-
-    <div class="card" id="contact">
-      <h3>📞 Kapcsolat</h3>
-      <p>
-        Hivatalos RP Parancsnokság<br>
-        Magyarország - Bács-Kiskun Vármegye
-      </p>
-    </div>
-
+  <div class="card">
+    <h3>ℹ️ Tájékoztatás</h3>
+    <p>
+      A szerver célja a realisztikus rendvédelmi RP és a fegyelmezett játékélmény biztosítása.
+    </p>
   </div>
 
 </div>
 
-<div class="footer">
-  © 2026 ORFK RP - Szabadszállás Készenléti Rendőrség | Minden jog fenntartva
-</div>
+<footer>© 2026 ORFK RP - Szabadszállás KR</footer>
 
 </body>
 </html>
